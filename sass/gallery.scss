@@ -1,0 +1,107 @@
+.main {
+  margin-top: 6rem;
+  padding: 2rem 15rem;
+  background-color: #f0f0f0;
+}
+
+.top {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  .title {
+    font-size: 3.5rem;
+    font-weight: 200;
+    margin-right: auto;
+    padding-left: 2rem;
+  }
+  .sort {
+    width: 40%;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      fill: grey;
+    }
+    &-nav {
+      width: max-content;
+      height: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      color: gray;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+      border-right: 1px solid grey;
+      padding-right: 1rem;
+      margin-left: 2rem;
+      text-align: right;
+    }
+    &-title {
+      border-right: none;
+      width: 8rem;
+      margin-left: 0;
+    }
+    &-by {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+
+      &-icon {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1.5rem;
+        fill: grey;
+      }
+      .icon-star {
+        fill: #389fd2;
+      }
+    }
+  }
+}
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 38rem));
+  grid-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    height: 30rem;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 25rem 5rem;
+    border: 1px solid grey;
+    background-color: lavender;
+    box-shadow: 2px 2px 4px rgb(219, 219, 219);
+    overflow: hidden;
+  }
+
+  &-photo {
+    width: 100%;
+    // transform: translateY(2rem);
+  }
+
+  &-title-container {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+}
