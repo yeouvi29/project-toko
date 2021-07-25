@@ -230,11 +230,19 @@ body {
         .header .nav .logo {
           font-size: 2rem;
           margin-right: auto; } }
+      @media only screen and (max-width: 500px) {
+        .header .nav .logo {
+          width: max-content;
+          font-size: 1.5rem;
+          margin-right: auto; } }
     .header .nav .search {
       width: 50%;
       display: flex;
       flex-direction: row;
       align-items: center; }
+      @media only screen and (max-width: 500px) {
+        .header .nav .search {
+          width: max-content; } }
       .header .nav .search-icon {
         width: 3rem;
         height: 3rem;
@@ -247,6 +255,9 @@ body {
         border-radius: 5px;
         padding-left: 1rem;
         text-transform: uppercase; }
+        @media only screen and (max-width: 500px) {
+          .header .nav .search-bar {
+            display: none; } }
       .header .nav .search-button {
         width: 5rem;
         height: 4rem;
